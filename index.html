@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CustomerInvoice</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <style>
+      body{
+        background-color:lightgray
+      }
+      .col-6 {
+        margin-top: 5px;
+      }
+      #heading {
+        border-bottom: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="display-4 text-center" id="heading">Customer Details</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-3 col-6">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="name"><h5>Name</h5></label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="id"><h5>ID</h5></label>
+                <input type="number" class="form-control" id="id" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="id"><h5>Discount</h5></label>
+                <input type="number" class="form-control" id="Discount" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label><h5>InvoiceId</h5></label>
+                <input type="number" class="form-control" id="invoiceId" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label><h5>Amount</h5></label>
+                <input type="number" class="form-control" id="amount" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label><h5>AccountId</h5></label>
+                <input type="number" class="form-control" id="accountId" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label><h5>Balance</h5></label>
+                <input type="number" class="form-control" id="balance" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input
+                type="button"
+                id="button1"
+                value="Deposit"
+                class="btn btn-primary"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="button"
+                id="button2"
+                value="Withdraw"
+                class="btn btn-primary"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-3 col-6" id="output">
+      </div>
+    </div>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
